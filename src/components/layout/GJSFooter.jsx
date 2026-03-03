@@ -22,7 +22,7 @@ const GJSFooter = () => {
           {/* Brand */}
           <div className="space-y-3">
             <div className="flex items-center gap-3">
-              <img src="/images/GombeBadge.png" alt="Gombe Junior School" className="h-10 w-auto brightness-0 invert" />
+              <img src="/GombeBadge.png" alt="Gombe Junior School" className="h-10 w-auto brightness-0 invert" />
               <div className="leading-tight">
                 <div className="text-base font-bold">Gombe Junior School</div>
                 <div className="text-xs font-semibold" style={{ color: brandColors.primary }}>
@@ -119,7 +119,7 @@ const GJSFooter = () => {
             <div className="flex items-center gap-2">
               <span className="text-gray-300 text-sm">Powered by</span>
               <img 
-                src="/images/Inzozi-grayscale.png" 
+                src="/Inzozi-grayscale.png" 
                 alt="Inzozi Logo" 
                 className="h-10 w-auto" 
               />

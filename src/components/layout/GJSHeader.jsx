@@ -35,7 +35,7 @@ const GJSHeader = () => {
         <div className="flex items-center justify-between h-20 relative overflow-visible">
           {/* Brand */}
           <Link to="/" className="flex items-center gap-3" {...brandLinkProps}>
-            <img src="/images/GombeBadge.png" alt="Gombe Junior School" className="h-12 w-auto" />
+            <img src="/GombeBadge.png" alt="Gombe Junior School" className="h-12 w-auto" />
             <div className="leading-tight">
               <div className="text-lg font-bold text-white">
                 Gombe Junior School

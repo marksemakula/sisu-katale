@@ -24,7 +24,7 @@ const SAKFooter = React.memo(() => {
           <div className="space-y-3">
             <div className="flex items-center gap-3">
               <div className="h-24 w-24 flex items-center justify-center overflow-hidden">
-                <img src="/images/Gombe High logo.png" alt="St. Andrew Kaggwa Gombe HS" className="h-full w-full object-contain grayscale" loading="lazy" />
+                <img src="/Gombe High logo.png" alt="St. Andrew Kaggwa Gombe HS" className="h-full w-full object-contain grayscale" loading="lazy" />
               </div>
               <div className="leading-tight">
                 <div className="text-base font-bold">St. Andrew Kaggwa Gombe High School</div>
@@ -86,7 +86,7 @@ const SAKFooter = React.memo(() => {
               <div className="flex items-center gap-2">
                 <span className="text-white text-xs">Powered by</span>
                 <img 
-                  src="/images/Inzozi-grayscale.png" 
+                  src="/Inzozi-grayscale.png" 
                   alt="Inzozi Logo" 
                   className="h-16 w-auto" 
                   loading="lazy" 

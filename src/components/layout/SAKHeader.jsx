@@ -45,7 +45,7 @@ const SAKHeader = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="flex items-center gap-3" onClick={closeMenus}>
             <div className="h-14 w-14 flex items-center justify-center overflow-hidden">
-              <img src="/images/Gombe High logo.png" alt="St. Andrew Kaggwa Gombe HS" className="h-full w-full object-contain grayscale" />
+              <img src="/Gombe High logo.png" alt="St. Andrew Kaggwa Gombe HS" className="h-full w-full object-contain grayscale" />
             </div>
             <div className="leading-tight">
               <div className="text-base lg:text-lg font-bold text-white">St. Andrew Kaggwa Gombe HS</div>
