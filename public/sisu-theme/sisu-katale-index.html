@@ -36,6 +36,7 @@
 <link rel="stylesheet" href="assets/vendors/bootstrap-select/bootstrap-select.min.css" />
 <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
 <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
 <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
 <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
@@ -133,6 +134,12 @@ body.custom-cursor {
 
 .service-one__item__title {
   font-family: "Schoolbell", cursive !important;
+}
+
+.footer-widget__social a {
+  background-color: transparent !important;
+  -webkit-mask: none !important;
+  mask: none !important;
 }
 
 .landing-hero {
@@ -382,6 +389,67 @@ body.custom-cursor {
     </div>
   </div>
 </section>
+
+<!-- Partners / Affiliates Ticker -->
+<section class="logo-ticker" style="background:#fff; padding: 18px 0; overflow:hidden; border-top: 1px solid #eee;">
+  <style>
+    .logo-ticker__track {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      width: max-content;
+      will-change: transform;
+      animation: ticker-scroll 36s linear infinite;
+    }
+    .logo-ticker__track:hover { animation-play-state: paused; }
+    .logo-ticker__track img {
+      height: 56px;
+      width: auto;
+      filter: grayscale(100%);
+      opacity: 0.65;
+      transition: filter 0.3s, opacity 0.3s;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .logo-ticker__track img:hover { filter: grayscale(0%); opacity: 1; }
+    @keyframes ticker-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-33.333%); }
+    }
+  </style>
+  <div style="overflow:hidden; width:100%;">
+    <div class="logo-ticker__track">
+      <!-- set 1 -->
+      <img src="/GES.png" alt="GES">
+      <img src="/Gombe High logo.png" alt="Gombe High School">
+      <img src="/Gombe Junior School logo.png" alt="Gombe Junior School">
+      <img src="/IEPP.png" alt="IEPP">
+      <img src="/KISU.png" alt="KISU">
+      <img src="/MoES1.png" alt="Ministry of Education">
+      <img src="/Jimmy Ssekasi Business Institute Logo.png" alt="Jimmy Ssekasi Business Institute">
+      <img src="/Flag_of_Buganda.svg" alt="Buganda">
+      <!-- set 2 -->
+      <img src="/GES.png" alt="GES">
+      <img src="/Gombe High logo.png" alt="Gombe High School">
+      <img src="/Gombe Junior School logo.png" alt="Gombe Junior School">
+      <img src="/IEPP.png" alt="IEPP">
+      <img src="/KISU.png" alt="KISU">
+      <img src="/MoES1.png" alt="Ministry of Education">
+      <img src="/Jimmy Ssekasi Business Institute Logo.png" alt="Jimmy Ssekasi Business Institute">
+      <img src="/Flag_of_Buganda.svg" alt="Buganda">
+      <!-- set 3 -->
+      <img src="/GES.png" alt="GES">
+      <img src="/Gombe High logo.png" alt="Gombe High School">
+      <img src="/Gombe Junior School logo.png" alt="Gombe Junior School">
+      <img src="/IEPP.png" alt="IEPP">
+      <img src="/KISU.png" alt="KISU">
+      <img src="/MoES1.png" alt="Ministry of Education">
+      <img src="/Jimmy Ssekasi Business Institute Logo.png" alt="Jimmy Ssekasi Business Institute">
+      <img src="/Flag_of_Buganda.svg" alt="Buganda">
+    </div>
+  </div>
+</section>
+
 <section class="service-one">
 	<div class="service-one__bg sisu-splax" data-para-options='{
 		"orientation": "up",
@@ -1229,23 +1297,43 @@ body {
 								<i class="icon-email1 footer-widget__info__icon"></i>
 								<a href="mailto:info@scoobydoodaycare.com">info@scoobydoodaycare.com</a></li>
 						</ul><!-- /.list-unstyled -->
-						<div class="footer-widget__social">
-							<a href="https://twitter.com/">
-	<i class="fab fa-twitter" aria-hidden="true"></i>
-	<span class="sr-only">Twitter</span>
-</a>
-<a href="https://facebook.com/">
-	<i class="fab fa-facebook" aria-hidden="true"></i>
-	<span class="sr-only">Facebook</span>
-</a>
-<a href="https://pinterest.com/">
-	<i class="fab fa-pinterest-p" aria-hidden="true"></i>
-	<span class="sr-only">Pinterest</span>
-</a>
-<a href="https://instagram.com/">
-	<i class="fab fa-instagram" aria-hidden="true"></i>
-	<span class="sr-only">Instagram</span>
-</a>
+						<div class="footer-widget__social" style="flex-wrap: nowrap; overflow-x: auto;">
+							<a href="https://linkedin.com/" title="LinkedIn" style="width:40px;height:41px;font-size:17px;">
+								<i class="fab fa-linkedin" aria-hidden="true"></i>
+								<span class="sr-only">LinkedIn</span>
+							</a>
+							<a href="https://twitter.com/" title="X" style="width:40px;height:41px;font-size:17px;">
+								<i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+								<span class="sr-only">X</span>
+							</a>
+							<a href="https://youtube.com/" title="YouTube" style="width:40px;height:41px;font-size:17px;">
+								<i class="fab fa-youtube" aria-hidden="true"></i>
+								<span class="sr-only">YouTube</span>
+							</a>
+							<a href="https://snapchat.com/" title="Snapchat" style="width:40px;height:41px;font-size:17px;">
+								<i class="fab fa-snapchat" aria-hidden="true"></i>
+								<span class="sr-only">Snapchat</span>
+							</a>
+							<a href="https://tiktok.com/" title="TikTok" style="width:40px;height:41px;font-size:17px;">
+								<i class="fab fa-tiktok" aria-hidden="true"></i>
+								<span class="sr-only">TikTok</span>
+							</a>
+							<a href="https://facebook.com/" title="Facebook" style="width:40px;height:41px;font-size:17px;">
+								<i class="fab fa-facebook" aria-hidden="true"></i>
+								<span class="sr-only">Facebook</span>
+							</a>
+							<a href="https://discord.com/" title="Discord" style="width:40px;height:41px;font-size:17px;">
+								<i class="fab fa-discord" aria-hidden="true"></i>
+								<span class="sr-only">Discord</span>
+							</a>
+							<a href="https://slack.com/" title="Slack" style="width:40px;height:41px;font-size:17px;">
+								<i class="fab fa-slack" aria-hidden="true"></i>
+								<span class="sr-only">Slack</span>
+							</a>
+							<a href="https://telegram.org/" title="Telegram" style="width:40px;height:41px;font-size:17px;">
+								<i class="fab fa-telegram" aria-hidden="true"></i>
+								<span class="sr-only">Telegram</span>
+							</a>
 						</div><!-- /.footer-widget__social -->
 					</div><!-- /.footer-widget -->
 				</div><!-- /.col-md-6 -->
