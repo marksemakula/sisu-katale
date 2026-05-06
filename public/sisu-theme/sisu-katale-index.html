@@ -353,7 +353,16 @@ body.custom-cursor {
             <nav class="main-header__nav main-menu">
               <ul class="main-menu__list">
                 <li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
+				<li class="dropdown"><a href="#about-us">About</a>
+					<ul>
+						<li><a href="#about-profile">School Profile</a></li>
+						<li><a href="#about-mission">Mission &amp; Vision</a></li>
+						<li><a href="#about-values">Core Values</a></li>
+						<li><a href="#about-bog">Board of Governors</a></li>
+						<li><a href="#about-principal">Principal's Message</a></li>
+						<li><a href="#about-admin">Administration &amp; Management</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Events</a></li>
 				<li><a href="#">Programs</a></li>
 				<li><a href="#">News</a></li>
@@ -383,7 +392,7 @@ body.custom-cursor {
       </div>
       <div class="col-lg-6">
         <div class="landing-hero__visual">
-          <div class="landing-hero__campus-name">KATALE<br>Campus</div>
+          <div class="landing-hero__campus-name">Katale<br>Campus</div>
         </div>
       </div>
     </div>
@@ -533,7 +542,7 @@ body.custom-cursor {
 						Started in 2013
 					</p>
 					<a href="#" class="sisu-btn" style="font-family: 'Ubuntu', sans-serif;">
-						<span>Learn More</span>
+						<span>School Profile</span>
 					</a>
 				</div>
 			</div>
@@ -695,7 +704,7 @@ body {
 						<div class="testimonial-one__item__author">
 							<img src="/scoobydoo-logo.png" alt="sisu"/>
 							<h5 class="testimonial-one__item__author__name">SISU</h5>
-							<p class="testimonial-one__item__author__designation">Katale</p>
+							<p class="testimonial-one__item__author__designation">Gulu</p>
 						</div>
 					</div>
 				</div>
@@ -707,7 +716,7 @@ body {
 						<div class="testimonial-one__item__author">
 							<img src="/scoobydoo-logo.png" alt="sisu"/>
 							<h5 class="testimonial-one__item__author__name">SISU</h5>
-							<p class="testimonial-one__item__author__designation">Katale</p>
+							<p class="testimonial-one__item__author__designation">Gulu</p>
 						</div>
 					</div>
 				</div>
@@ -719,7 +728,7 @@ body {
 						<div class="testimonial-one__item__author">
 							<img src="/scoobydoo-logo.png" alt="sisu"/>
 							<h5 class="testimonial-one__item__author__name">SISU</h5>
-							<p class="testimonial-one__item__author__designation">Katale</p>
+							<p class="testimonial-one__item__author__designation">Gulu</p>
 						</div>
 					</div>
 				</div>
@@ -736,7 +745,7 @@ body {
 						<div class="testimonial-one__item__author">
 							<img src="/scoobydoo-logo.png" alt="sisu"/>
 							<h5 class="testimonial-one__item__author__name">SISU</h5>
-							<p class="testimonial-one__item__author__designation">Katale</p>
+							<p class="testimonial-one__item__author__designation">Gulu</p>
 						</div>
 					</div>
 				</div>
@@ -1096,13 +1105,20 @@ body {
             <div class="mail-one__bg" style="background-color: #2D9E3D !important;">
             </div>
             <div class="mail-one__content">
-                <h3 class="mail-one__title">Subscribe to our newsletter<br> for daily updates</h3>
-                <form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-one__form mc-form">
-                    <input type="text" name="EMAIL" placeholder="Email Address" style="font-family: 'Ubuntu', sans-serif;">
-                    <button type="submit" class="sisu-btn" style="background-color: #FFD700 !important; font-family: 'Ubuntu', sans-serif;">
-                        <span>Subscribe</span>
+                <style>
+                  .mail-one__form input[type=email]{width:170px;display:block;border:none;outline:none;height:56px;background-color:var(--sisu-white,#fff);color:var(--sisu-text,#7E8185);font-size:16px;font-weight:500;padding-left:24px;padding-right:20px;border-radius:12px;transition:all 500ms ease;}
+                  .mail-one__form input[type=text]{width:170px;}
+                  .sg-wa-btn{background-color:#25D366!important;}
+                </style>
+                <h3 class="mail-one__title">Sign Up a Learner<br> at SISU Gulu</h3>
+                <form action="#" class="mail-one__form mc-form" onsubmit="(function(f){var n=f.querySelector('[name=LEARNER_NAME]').value.trim(),e=f.querySelector('[name=PARENT_EMAIL]').value.trim();if(!n||!e){return false;}var msg='Hello+SISU+Gulu%2C+I+would+like+to+sign+up+my+child.%0AName%3A+'+encodeURIComponent(n)+'%0AParent+Email%3A+'+encodeURIComponent(e);window.open('https://wa.me/256708800006?text='+msg,'_blank');return false;})(this);return false;">
+                    <input type="text" name="LEARNER_NAME" placeholder="Learner's Full Name" required>
+                    <input type="email" name="PARENT_EMAIL" placeholder="Parent's Email" required>
+                    <button type="submit" class="sisu-btn sg-wa-btn" title="Send via WhatsApp" style="display:inline-flex;align-items:center;gap:8px;padding:11px 28px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="#fff"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.46.67 4.9 1.94 7.04L2 30l7.18-1.88A13.94 13.94 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.45 11.45 0 01-5.84-1.6l-.42-.25-4.26 1.12 1.13-4.14-.28-.44A11.5 11.5 0 1116 27.5zm6.32-8.6c-.35-.17-2.06-1.02-2.38-1.13-.32-.12-.56-.17-.8.17-.24.35-.9 1.13-1.1 1.37-.2.23-.4.26-.75.09-.35-.17-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.15-.71.16-.16.35-.4.52-.6.17-.2.23-.35.35-.58.12-.23.06-.44-.03-.61-.09-.17-.8-1.93-1.1-2.64-.28-.68-.58-.59-.8-.6h-.68c-.23 0-.61.09-.93.44-.32.35-1.22 1.19-1.22 2.9s1.25 3.37 1.42 3.6c.17.23 2.45 3.74 5.94 5.25.83.36 1.48.57 1.98.73.83.26 1.59.23 2.19.14.67-.1 2.06-.84 2.35-1.66.29-.82.29-1.52.2-1.66-.08-.14-.32-.23-.67-.4z"/></svg>
+                        Sign Up
                     </button>
-                </form><!-- /. mc-form -->
+                </form>
                 <div class="mc-form__response"></div><!-- /.mc-form__response -->
             </div>
             <div class="mail-one__shape sisu-splax" data-para-options='{
@@ -1283,7 +1299,7 @@ body {
 						<ul class="list-unstyled footer-widget__info">
 							<li>
 								<i class="icon-location2 footer-widget__info__icon"></i>
-								<a href="#">Katale, Uganda</a></li>
+								<a href="#">Katale Town, Uganda</a></li>
 							<li>
 								<i class="icon-call footer-widget__info__icon"></i>
 								<a href="tel:+256414694516">Tel: +256-414 694 516</a></li>
@@ -1403,10 +1419,9 @@ body {
 	</div><!-- /.main-footer__top -->
 	<div class="main-footer__bottom">
 		<div class="container">
-			<div class="main-footer__bottom__inner" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-				<p class="main-footer__copyright" style="margin: 0;">
-					&copy; Copyright 2026 Scoobydoo International School Uganda (SISU).
-				</p>
+			<p class="main-footer__copyright" style="margin: 0;">
+				&copy; Copyright 2026 Scoobydoo International School Uganda (SISU).
+			</p>
 				<div style="display: flex; align-items: center; gap: 8px;">
 					<span style="color: #d1d5db; font-size: 14px;">Powered by</span>
 					<img
@@ -1415,7 +1430,6 @@ body {
 						style="height: 48px; width: auto; filter: brightness(0) invert(1);"
 					/>
 				</div>
-			</div><!-- /.main-footer__inner -->
 		</div><!-- /.container -->
 	</div><!-- /.main-footer__bottom -->
 </footer><!-- /.main-footer -->
