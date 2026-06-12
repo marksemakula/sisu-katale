@@ -329,6 +329,96 @@ body.custom-cursor {
   50% { opacity: 0.6; }
 }
 </style>
+
+<style>
+/* ============================================================
+   Fill all masked image cut-outs & balance tiles
+   ============================================================ */
+
+/* "Our Programs" tiles — uniform cut-out size regardless of
+   photo orientation (Toddlers photo is portrait) */
+.program-one__item__image {
+  aspect-ratio: 217 / 136; /* matches the blob mask viewBox */
+}
+.program-one__item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Equal-height program tiles */
+.program-one .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.program-one .row > [class*="col-"] {
+  display: flex;
+}
+.program-one__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* S-I-S-U letter cut-outs (service section) — photos fully fill
+   each letter and all four tiles stay the same height */
+.service-one__item__image {
+  aspect-ratio: 1 / 1;
+}
+.service-one__item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Teacher cards — uniform cut-out fill */
+.team-card__image {
+  aspect-ratio: 300 / 323; /* matches the blob mask viewBox */
+}
+.team-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* About section photo cut-out */
+.about-one__image__one {
+  aspect-ratio: 300 / 302; /* matches the blob mask viewBox */
+  display: block;
+}
+.about-one__image__one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Blog card photo cut-outs */
+.blog-card-three__image {
+  aspect-ratio: 291 / 189; /* matches the blob mask viewBox */
+}
+.blog-card-three__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Hover reveal strips compose one full photo across the 4 layers */
+.blog-card-three__image__layer {
+  background-size: 400% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Author avatars — fill the 44px circle */
+.blog-card-three__author__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Video tour thumbnail — fill its frame */
+.video-one__btn img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+</style>
 </head>
 
 <body class="custom-cursor">
@@ -338,15 +428,15 @@ body.custom-cursor {
     <defs>
       <mask id="mask-S" maskContentUnits="objectBoundingBox">
         <rect width="1" height="1" fill="black" />
-        <text x="0.5" y="0.75" font-size="0.9" font-weight="900" fill="white" stroke="white" stroke-width="0.08" stroke-linejoin="round" font-family="'Schoolbell', 'Fredoka', 'Arial Black', sans-serif" text-anchor="middle">S</text>
+        <text x="0.5" y="0.92" font-size="1.25" font-weight="900" fill="white" stroke="white" stroke-width="0.05" stroke-linejoin="round" font-family="'Fredoka', 'Arial Black', 'Schoolbell', sans-serif" text-anchor="middle">S</text>
       </mask>
       <mask id="mask-I" maskContentUnits="objectBoundingBox">
         <rect width="1" height="1" fill="black" />
-        <text x="0.5" y="0.75" font-size="0.9" font-weight="900" fill="white" stroke="white" stroke-width="0.08" stroke-linejoin="round" font-family="'Schoolbell', 'Fredoka', 'Arial Black', sans-serif" text-anchor="middle">I</text>
+        <text x="0.5" y="0.92" font-size="1.25" font-weight="900" fill="white" stroke="white" stroke-width="0.05" stroke-linejoin="round" font-family="'Fredoka', 'Arial Black', 'Schoolbell', sans-serif" text-anchor="middle">I</text>
       </mask>
       <mask id="mask-U" maskContentUnits="objectBoundingBox">
         <rect width="1" height="1" fill="black" />
-        <text x="0.5" y="0.75" font-size="0.9" font-weight="900" fill="white" stroke="white" stroke-width="0.08" stroke-linejoin="round" font-family="'Schoolbell', 'Fredoka', 'Arial Black', sans-serif" text-anchor="middle">U</text>
+        <text x="0.5" y="0.92" font-size="1.25" font-weight="900" fill="white" stroke="white" stroke-width="0.05" stroke-linejoin="round" font-family="'Fredoka', 'Arial Black', 'Schoolbell', sans-serif" text-anchor="middle">U</text>
       </mask>
     </defs>
   </svg>
@@ -410,7 +500,7 @@ body.custom-cursor {
       </div>
       <div class="col-lg-6">
         <div class="landing-hero__visual">
-          <div class="landing-hero__campus-name">Katale<br>Campus</div>
+          <div class="landing-hero__campus-name">Kampala<br>Campus</div>
         </div>
       </div>
     </div>
@@ -1178,10 +1268,10 @@ body {
     <div class="blog-card-three__image">
         <img src="/katale/26-08-2015-01-01-46_IMG_1441.jpg" alt="Play-Based Learning: Nurturing Creative Minds in Uganda's Early Years">
         <div class="blog-card-three__image__layer-wrapper">
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1661861141158-be08023174e6.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1666956837879-fafe054d850c.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1713890429200-e725c894ab95.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/science.avif);"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-01-12-29_IMG_3773.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-01-12-29_IMG_3773.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-01-12-29_IMG_3773.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-01-12-29_IMG_3773.jpg');"></div>
         </div>
         <a href="blog-details-left.html" class="blog-card-three__image__link"><span class="sr-only">Play-Based Learning: Nurturing Creative Minds in Uganda's Early Years</span><!-- /.sr-only --></a>
     </div><!-- /.blog-card-three__image -->
@@ -1211,10 +1301,10 @@ body {
     <div class="blog-card-three__image">
         <img src="/katale/26-08-2015-01-03-29_IMG_3691.jpg" alt="Understanding the National Early Childhood Development Policy Guidelines">
         <div class="blog-card-three__image__layer-wrapper">
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1722384028426-6ca4e892d7ab.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1723050053847-2aaf8ad2c74c.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1723050053855-a6c2961b302a.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/science.avif);"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/15-09-2015-12-03-57_DSCN1414.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/15-09-2015-12-03-57_DSCN1414.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/15-09-2015-12-03-57_DSCN1414.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/15-09-2015-12-03-57_DSCN1414.jpg');"></div>
         </div>
     </div><!-- /.blog-card-three__image -->
     <div class="blog-card-three__content">
@@ -1243,10 +1333,10 @@ body {
     <div class="blog-card-three__image">
         <img src="/katale/26-08-2015-12-49-54__MG_8635.jpg" alt="A Parent's Guide to Choosing the Right Daycare in Kampala">
         <div class="blog-card-three__image__layer-wrapper">
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1724026586579-5c413598de2c.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1661861141158-be08023174e6.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1722384028426-6ca4e892d7ab.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/science.avif);"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-12-55-02_1.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-12-55-02_1.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-12-55-02_1.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-12-55-02_1.jpg');"></div>
         </div>
         <a href="blog-details-left.html" class="blog-card-three__image__link"><span class="sr-only">A Parent's Guide to Choosing the Right Daycare in Kampala</span><!-- /.sr-only --></a>
     </div><!-- /.blog-card-three__image -->
