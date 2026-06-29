@@ -354,6 +354,96 @@ body.custom-cursor {
   50% { opacity: 0.6; }
 }
 </style>
+
+<style>
+/* ============================================================
+   Fill all masked image cut-outs & balance tiles
+   ============================================================ */
+
+/* "Our Programs" tiles — uniform cut-out size regardless of
+   photo orientation (Toddlers photo is portrait) */
+.program-one__item__image {
+  aspect-ratio: 217 / 136; /* matches the blob mask viewBox */
+}
+.program-one__item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Equal-height program tiles */
+.program-one .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.program-one .row > [class*="col-"] {
+  display: flex;
+}
+.program-one__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* S-I-S-U letter cut-outs (service section) — photos fully fill
+   each letter and all four tiles stay the same height */
+.service-one__item__image {
+  aspect-ratio: 1 / 1;
+}
+.service-one__item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Teacher cards — uniform cut-out fill */
+.team-card__image {
+  aspect-ratio: 300 / 323; /* matches the blob mask viewBox */
+}
+.team-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* About section photo cut-out */
+.about-one__image__one {
+  aspect-ratio: 300 / 302; /* matches the blob mask viewBox */
+  display: block;
+}
+.about-one__image__one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Blog card photo cut-outs */
+.blog-card-three__image {
+  aspect-ratio: 291 / 189; /* matches the blob mask viewBox */
+}
+.blog-card-three__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Hover reveal strips compose one full photo across the 4 layers */
+.blog-card-three__image__layer {
+  background-size: 400% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Author avatars — fill the 44px circle */
+.blog-card-three__author__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Video tour thumbnail — fill its frame */
+.video-one__btn img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+</style>
 </head>
 
 <body class="custom-cursor">
@@ -363,15 +453,15 @@ body.custom-cursor {
     <defs>
       <mask id="mask-S" maskContentUnits="objectBoundingBox">
         <rect width="1" height="1" fill="black" />
-        <text x="0.5" y="0.75" font-size="0.9" font-weight="900" fill="white" stroke="white" stroke-width="0.08" stroke-linejoin="round" font-family="'Schoolbell', 'Fredoka', 'Arial Black', sans-serif" text-anchor="middle">S</text>
+        <text x="0.5" y="0.92" font-size="1.25" font-weight="900" fill="white" stroke="white" stroke-width="0.05" stroke-linejoin="round" font-family="'Fredoka', 'Arial Black', 'Schoolbell', sans-serif" text-anchor="middle">S</text>
       </mask>
       <mask id="mask-I" maskContentUnits="objectBoundingBox">
         <rect width="1" height="1" fill="black" />
-        <text x="0.5" y="0.75" font-size="0.9" font-weight="900" fill="white" stroke="white" stroke-width="0.08" stroke-linejoin="round" font-family="'Schoolbell', 'Fredoka', 'Arial Black', sans-serif" text-anchor="middle">I</text>
+        <text x="0.5" y="0.92" font-size="1.25" font-weight="900" fill="white" stroke="white" stroke-width="0.05" stroke-linejoin="round" font-family="'Fredoka', 'Arial Black', 'Schoolbell', sans-serif" text-anchor="middle">I</text>
       </mask>
       <mask id="mask-U" maskContentUnits="objectBoundingBox">
         <rect width="1" height="1" fill="black" />
-        <text x="0.5" y="0.75" font-size="0.9" font-weight="900" fill="white" stroke="white" stroke-width="0.08" stroke-linejoin="round" font-family="'Schoolbell', 'Fredoka', 'Arial Black', sans-serif" text-anchor="middle">U</text>
+        <text x="0.5" y="0.92" font-size="1.25" font-weight="900" fill="white" stroke="white" stroke-width="0.05" stroke-linejoin="round" font-family="'Fredoka', 'Arial Black', 'Schoolbell', sans-serif" text-anchor="middle">U</text>
       </mask>
     </defs>
   </svg>
@@ -388,28 +478,28 @@ body.custom-cursor {
         <div class="main-header__inner">
 
 			<div class="main-header__brand">
-				<a href="index.html" class="main-header__brand-link">
+				<a href="sisu-katale-index.html" class="main-header__brand-link">
 					<img src="/scooby-logo.png" alt="Scooby-Doo International School" />
 				</a>
 			</div>
 
             <nav class="main-header__nav main-menu">
               <ul class="main-menu__list">
-                <li><a href="#">Home</a></li>
-				<li class="dropdown"><a href="#about-us">About</a>
+                <li><a href="sisu-katale-index.html">Home</a></li>
+				<li class="dropdown"><a href="sisu-katale-index.html#about-us">About</a>
 					<ul>
-						<li><a href="#about-profile">School Profile</a></li>
-						<li><a href="#about-mission">Mission &amp; Vision</a></li>
-						<li><a href="#about-values">Core Values</a></li>
-						<li><a href="#about-bog">School Management Committee</a></li>
-						<li><a href="#about-principal">Principal's Message</a></li>
-						<li><a href="#about-admin">Administration &amp; Management</a></li>
+						<li><a href="sisu-katale-index.html#about-profile">School Profile</a></li>
+						<li><a href="sisu-katale-index.html#about-mission">Mission &amp; Vision</a></li>
+						<li><a href="sisu-katale-index.html#about-values">Core Values</a></li>
+						<li><a href="sisu-katale-index.html#about-bog">School Management Committee</a></li>
+						<li><a href="coordinator-message.html">Campus Coordinator Message</a></li>
+						<li><a href="sisu-katale-index.html#about-admin">Administration &amp; Management</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#">Programs</a></li>
-				<li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
+				<li><a href="sisu-katale-index.html#events">Events</a></li>
+				<li><a href="sisu-katale-index.html#programs">Programs</a></li>
+				<li><a href="sisu-katale-index.html#news">News</a></li>
+                <li><a href="sisu-katale-index.html#contact">Contact</a></li>
               </ul>
             </nav><!-- /.main-header__nav -->
             <div class="main-header__right">
@@ -435,7 +525,7 @@ body.custom-cursor {
       </div>
       <div class="col-lg-6">
         <div class="landing-hero__visual">
-          <div class="landing-hero__campus-name">Katale<br>Campus</div>
+          <div class="landing-hero__campus-name">Kampala<br>Campus</div>
         </div>
       </div>
     </div>
@@ -1201,29 +1291,29 @@ body {
 				<div class="blog-card-three wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms' style='--accent-color: #F25334;'>
     <div class="blog-card-three__bg"></div>
     <div class="blog-card-three__image">
-        <img src="/katale/26-08-2015-01-01-46_IMG_1441.jpg" alt="10 easy steps to more learn about play">
+        <img src="/katale/26-08-2015-01-01-46_IMG_1441.jpg" alt="Play-Based Learning: Nurturing Creative Minds in Uganda's Early Years">
         <div class="blog-card-three__image__layer-wrapper">
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1661861141158-be08023174e6.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1666956837879-fafe054d850c.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1713890429200-e725c894ab95.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/science.avif);"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-01-12-29_IMG_3773.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-01-12-29_IMG_3773.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-01-12-29_IMG_3773.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-01-12-29_IMG_3773.jpg');"></div>
         </div>
-        <a href="blog-details-left.html" class="blog-card-three__image__link"><span class="sr-only">10 easy steps to more learn about play</span><!-- /.sr-only --></a>
+        <a href="blog-details-left.html" class="blog-card-three__image__link"><span class="sr-only">Play-Based Learning: Nurturing Creative Minds in Uganda's Early Years</span><!-- /.sr-only --></a>
     </div><!-- /.blog-card-three__image -->
     <div class="blog-card-three__content">
         <div class="blog-card-three__content__top">
-            <a href="blog-list.html" class="blog-card-three__category">Kindergarten</a>
-            <div class="blog-card-three__date">30 Mar, 2023</div><!-- /.blog-card-three__date -->
+            <a href="blog-list.html" class="blog-card-three__category">Early Years</a>
+            <div class="blog-card-three__date">30 Mar, 2026</div><!-- /.blog-card-three__date -->
         </div><!-- /.blog-card-three__content__top -->
-        <h3 class="blog-card-three__title"><a href="blog-details-left.html">10 easy steps to more learn about play</a></h3><!-- /.blog-card-three__title -->
+        <h3 class="blog-card-three__title"><a href="blog-details-left.html">Play-Based Learning: Nurturing Creative Minds in Uganda's Early Years</a></h3><!-- /.blog-card-three__title -->
         <div class="blog-card-three__content__bottom">
             <div class="blog-card-three__author">
                 <div class="blog-card-three__author__image">
-                    <img src="/GES.png" alt="Wade Warren">
+                    <img src="/Kampala/Owek. Kyewalabye David Male.jpg" alt="Owek. David Kyewalabye Male">
                 </div><!-- /.blog-card-three__author__image -->
                 <div class="blog-card-three__author__content">
-                    <h4 class="blog-card-three__author__name">Owek. David Kiwalabye Male</h4><!-- /.blog-card-three__author__name -->
-                    <p class="blog-card-three__author__designation">CEO</p><!-- /.blog-card-three__author__designation -->
+                    <h4 class="blog-card-three__author__name">Owek. David Kyewalabye Male</h4><!-- /.blog-card-three__author__name -->
+                    <p class="blog-card-three__author__designation">Director</p><!-- /.blog-card-three__author__designation -->
                 </div><!-- /.blog-card-three__author__content -->
             </div><!-- /.blog-card-three__author -->
         </div><!-- /.blog-card-three__content__bottom -->
@@ -1234,28 +1324,27 @@ body {
 				<div class="blog-card-three wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms' style='--accent-color: #2390FF;'>
     <div class="blog-card-three__bg"></div>
     <div class="blog-card-three__image">
-        <img src="/katale/26-08-2015-01-03-29_IMG_3691.jpg" alt="The complete kindearn design guideline 2023">
+        <img src="/katale/26-08-2015-01-03-29_IMG_3691.jpg" alt="Understanding the National Early Childhood Development Policy Guidelines">
         <div class="blog-card-three__image__layer-wrapper">
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1722384028426-6ca4e892d7ab.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1723050053847-2aaf8ad2c74c.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1723050053855-a6c2961b302a.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/science.avif);"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/15-09-2015-12-03-57_DSCN1414.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/15-09-2015-12-03-57_DSCN1414.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/15-09-2015-12-03-57_DSCN1414.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/15-09-2015-12-03-57_DSCN1414.jpg');"></div>
         </div>
-        <a href="blog-details-left.html" class="blog-card-three__image__link"><span class="sr-only">The complete kindearn design guideline 2023</span><!-- /.sr-only --></a>
     </div><!-- /.blog-card-three__image -->
     <div class="blog-card-three__content">
         <div class="blog-card-three__content__top">
-            <a href="blog-list.html" class="blog-card-three__category">Painting</a>
-            <div class="blog-card-three__date">26 Mar, 2023</div><!-- /.blog-card-three__date -->
+            <span class="blog-card-three__category" style="color: var(--sisu-accent, #2390FF);">ECD Policy</span>
+            <div class="blog-card-three__date">26 Mar, 2026</div><!-- /.blog-card-three__date -->
         </div><!-- /.blog-card-three__content__top -->
-        <h3 class="blog-card-three__title"><a href="blog-details-left.html">The complete kindearn design guideline 2023</a></h3><!-- /.blog-card-three__title -->
+        <h3 class="blog-card-three__title" style="color: var(--sisu-title-color, #1F2229);">Understanding the National Early Childhood Development Policy Guidelines</h3><!-- /.blog-card-three__title -->
         <div class="blog-card-three__content__bottom">
             <div class="blog-card-three__author">
                 <div class="blog-card-three__author__image">
-                    <img src="/GombeBadge.png" alt="Darlene Robertson">
+                    <img src="/Kampala/GES Rector - Daniella Nakayenga.jpeg" alt="Nakayenga Daniella">
                 </div><!-- /.blog-card-three__author__image -->
                 <div class="blog-card-three__author__content">
-                    <h4 class="blog-card-three__author__name">Daniella Nakayenga</h4><!-- /.blog-card-three__author__name -->
+                    <h4 class="blog-card-three__author__name">Nakayenga Daniella</h4><!-- /.blog-card-three__author__name -->
                     <p class="blog-card-three__author__designation">Rector</p><!-- /.blog-card-three__author__designation -->
                 </div><!-- /.blog-card-three__author__content -->
             </div><!-- /.blog-card-three__author -->
@@ -1267,29 +1356,29 @@ body {
 				<div class="blog-card-three wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms' style='--accent-color: #75C137;'>
     <div class="blog-card-three__bg"></div>
     <div class="blog-card-three__image">
-        <img src="/katale/26-08-2015-12-49-54__MG_8635.jpg" alt="Choose the best child care center for you!">
+        <img src="/katale/26-08-2015-12-49-54__MG_8635.jpg" alt="A Parent's Guide to Choosing the Right Daycare in Kampala">
         <div class="blog-card-three__image__layer-wrapper">
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1724026586579-5c413598de2c.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1661861141158-be08023174e6.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/premium_photo-1722384028426-6ca4e892d7ab.avif);"></div>
-            <div class="blog-card-three__image__layer" style="background-image: url(/science.avif);"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-12-55-02_1.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-12-55-02_1.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-12-55-02_1.jpg');"></div>
+            <div class="blog-card-three__image__layer" style="background-image: url('/katale/26-08-2015-12-55-02_1.jpg');"></div>
         </div>
-        <a href="blog-details-left.html" class="blog-card-three__image__link"><span class="sr-only">Choose the best child care center for you!</span><!-- /.sr-only --></a>
+        <a href="blog-details-left.html" class="blog-card-three__image__link"><span class="sr-only">A Parent's Guide to Choosing the Right Daycare in Kampala</span><!-- /.sr-only --></a>
     </div><!-- /.blog-card-three__image -->
     <div class="blog-card-three__content">
         <div class="blog-card-three__content__top">
-            <a href="blog-list.html" class="blog-card-three__category">Gaming</a>
-            <div class="blog-card-three__date">28 Mar, 2023</div><!-- /.blog-card-three__date -->
+            <a href="blog-list.html" class="blog-card-three__category">Parenting Tips</a>
+            <div class="blog-card-three__date">28 Mar, 2026</div><!-- /.blog-card-three__date -->
         </div><!-- /.blog-card-three__content__top -->
-        <h3 class="blog-card-three__title"><a href="blog-details-left.html">Choose the best child care center for you!</a></h3><!-- /.blog-card-three__title -->
+        <h3 class="blog-card-three__title"><a href="blog-details-left.html">A Parent's Guide to Choosing the Right Daycare in Kampala</a></h3><!-- /.blog-card-three__title -->
         <div class="blog-card-three__content__bottom">
             <div class="blog-card-three__author">
                 <div class="blog-card-three__author__image">
-                    <img src="/Inzozi-grayscale.png" alt="Cody Fisher">
+                    <img src="/Kampala/GES Executive Chairperson Mrs Harriet Mulyanti.JPG" alt="Mrs Mulyanti Harriet">
                 </div><!-- /.blog-card-three__author__image -->
                 <div class="blog-card-three__author__content">
-                    <h4 class="blog-card-three__author__name">Harriet Mulyanti</h4><!-- /.blog-card-three__author__name -->
-                    <p class="blog-card-three__author__designation">Board Chair</p><!-- /.blog-card-three__author__designation -->
+                    <h4 class="blog-card-three__author__name">Mrs Mulyanti Harriet</h4><!-- /.blog-card-three__author__name -->
+                    <p class="blog-card-three__author__designation">Executive Chairperson</p><!-- /.blog-card-three__author__designation -->
                 </div><!-- /.blog-card-three__author__content -->
             </div><!-- /.blog-card-three__author -->
         </div><!-- /.blog-card-three__content__bottom -->
