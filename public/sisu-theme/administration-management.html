@@ -7,14 +7,14 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Campus Coordinator Message | Scoobydoo International School Uganda (SISU)</title>
+	<title>Administration &amp; Management | Scoobydoo International School Uganda (SISU)</title>
 	<!-- favicons Icons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
 	<link rel="manifest" href="assets/images/favicons/site.webmanifest" />
 	<meta name="description"
-		content="Welcome message from Mrs. Sarah Nabyonga, Campus Coordinator at Scoobydoo International School Uganda (SISU) - Katale Campus." />
+		content="Meet the Administration &amp; Management team at Scoobydoo International School Uganda (SISU) - Katale Campus." />
 
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -130,10 +130,6 @@
 			background-color: #f4f7fb;
 		}
 
-		.service-one__item__title {
-			font-family: "Schoolbell", cursive !important;
-		}
-
 		.footer-widget__social a {
 			background-color: transparent !important;
 			-webkit-mask: none !important;
@@ -188,16 +184,94 @@
 	</style>
 
 	<style>
-		/* About section photo cut-out styles */
-		.about-one__image__one {
-			aspect-ratio: 300 / 302;
-			display: block;
+		/* Administration & Management team grid */
+		.team-admin {
+			padding: 120px 0 90px;
+			position: relative;
 		}
 
-		.about-one__image__one img {
+		.team-admin .sec-title__tagline {
+			color: #ffb606;
+			font-family: 'Schoolbell', cursive;
+			font-size: 22px;
+		}
+
+		.team-admin .sec-title__title {
+			font-family: 'Cinzel', serif;
+			color: #6e1d0f;
+			font-size: 40px;
+			line-height: 1.2;
+		}
+
+		.team-admin .team-card {
+			margin-bottom: 30px;
+		}
+
+		/* Keep the three portraits uniform regardless of source dimensions */
+		.team-admin .team-card__image {
+			aspect-ratio: 1 / 1;
+			border-radius: 24px;
+			overflow: hidden;
+		}
+
+		.team-admin .team-card__image img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			object-position: top center;
+		}
+
+		.team-admin .team-card__title a {
+			font-family: 'Cinzel', serif;
+			color: #6e1d0f;
+		}
+
+		.team-admin .team-card__designation {
+			font-family: 'Ubuntu', sans-serif;
+			font-weight: 500;
+			color: #26A6A1;
+		}
+	</style>
+
+	<!-- Floating WhatsApp Button styles -->
+	<style>
+		.whatsapp-float {
+			position: fixed;
+			right: 30px;
+			bottom: 100px;
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			background-color: #25D366;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 99;
+			box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+			transition: transform 200ms ease, box-shadow 200ms ease;
+			animation: whatsapp-pulse 2.5s infinite;
+		}
+
+		.whatsapp-float:hover {
+			transform: scale(1.08);
+			box-shadow: 0 8px 22px rgba(37, 211, 102, 0.55);
+		}
+
+		.whatsapp-float i {
+			font-size: 34px;
+			line-height: 1;
+			color: #ffffff;
+		}
+
+		@keyframes whatsapp-pulse {
+			0% { box-shadow: 0 6px 18px rgba(0,0,0,0.25), 0 0 0 0 rgba(37,211,102,0.5); }
+			70% { box-shadow: 0 6px 18px rgba(0,0,0,0.25), 0 0 0 14px rgba(37,211,102,0); }
+			100% { box-shadow: 0 6px 18px rgba(0,0,0,0.25), 0 0 0 0 rgba(37,211,102,0); }
+		}
+
+		@media (max-width: 575px) {
+			.whatsapp-float { right: 18px; bottom: 90px; width: 50px; height: 50px; }
+			.whatsapp-float i { font-size: 30px; }
 		}
 	</style>
 </head>
@@ -231,7 +305,7 @@
 									<li><a href="sisu-katale-index.html#about-mission">Core Values</a></li>
 									<li><a href="sisu-katale-index.html#about-bog">School Management Committee</a></li>
 									<li><a href="coordinator-message.html">Campus Coordinator Message</a></li>
-									<li><a href="administration-management.html">Administration &amp; Management</a>
+									<li class="current"><a href="administration-management.html">Administration &amp; Management</a>
 									</li>
 								</ul>
 							</li>
@@ -257,89 +331,103 @@
 			<div class="page-header__bg"
 				style="background-image: url('assets/images/backgrounds/page-header-bg-1-1.jpg');"></div>
 			<div class="container">
-				<h2 class="page-header__title" style="font-family: 'Cinzel', serif;">Campus Coordinator Message</h2>
+				<h2 class="page-header__title" style="font-family: 'Cinzel', serif;">Administration &amp; Management</h2>
 				<ul class="sisu-breadcrumb list-unstyled">
 					<li><a href="sisu-katale-index.html">Home</a></li>
-					<li><span>Campus Coordinator Message</span></li>
+					<li><span>Administration &amp; Management</span></li>
 				</ul>
 			</div>
 		</section>
 		<!--Page Header End-->
 
-		<!--Message Section Start-->
-		<section class="about-one" style="padding: 120px 0 90px;">
+		<!--Administration & Management Team Start-->
+		<section class="team-admin">
 			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 wow fadeInLeft" data-wow-delay="200ms">
-						<div class="about-one__content">
-							<div class="sec-title text-left">
-								<h6 class="sec-title__tagline"
-									style="color: #ffb606; font-family: 'Schoolbell', cursive; font-size: 20px;">Welcome
-									Message</h6>
-								<h3 class="sec-title__title"
-									style="font-family: 'Cinzel', serif; font-size: 38px; color: #6e1d0f; line-height: 1.2; margin-bottom: 24px;">
-									Welcome to our Preschool family</h3>
-							</div>
-							<div class="coordinator-message-text"
-								style="font-family: 'Ubuntu', sans-serif; font-size: 18px; line-height: 1.8; color: #4E5155;">
-								<p style="margin-bottom: 20px;">
-									At Scooby Doo International school Uganda, we believe that the early years are the
-									foundation of a child's lifelong journey of learning. Our Mission is to Provide
-									quality holistic education that fosters creativity, critical thinking and
-									collaboration to produce global citizens.
-								</p>
-								<p style="margin-bottom: 20px;">
-									We focus on fostering creativity, independence, and kindness through play-based
-									learning and hands-on experience.
-								</p>
-								<p style="margin-bottom: 20px;">
-									Our dedicated staff work closely with families to ensure that each child's unique
-									strengths are recognized and encouraged.
-								</p>
-								<p style="margin-bottom: 30px; font-weight: 500;">
-									Together, we are building not only strong learners but also compassionate
-									individuals who will thrive in school and beyond.
-								</p>
-							</div>
-							<div class="coordinator-signature"
-								style="margin-top: 30px; border-top: 2px solid #FCE9DD; padding-top: 20px;">
-								<h5
-									style="font-family: 'Schoolbell', cursive; font-size: 26px; color: #6e1d0f; margin-bottom: 5px;">
-									- Mrs. Nabyonga Sarah</h5>
-								<p
-									style="font-family: 'Ubuntu', sans-serif; font-size: 16px; color: #7E8185; margin: 0; font-weight: 500;">
-									Campus Coordinator, Katale Campus</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="about-one__image" style="padding-left: 30px; position: relative;">
-							<div class="about-one__image__one sisu-tilt"
-								data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'
-								style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 40px rgba(110, 29, 15, 0.15); max-width: 480px; margin: 0 auto; border: 3px solid #ffb606;">
-								<img src="/coordinator-sarah.jpeg" alt="Mrs. Nabyonga Sarah - Campus Coordinator"
-									style="width: 100%; height: auto; display: block;" />
-							</div>
-							<div class="about-one__image__border wow fadeInUp" data-wow-delay="200ms"
-								style="position: absolute; left: 10px; bottom: -20px; z-index: -1;">
-								<img src="assets/images/shapes/about-1-border.jpg" alt="sisu" />
-							</div>
-							<div class="about-one__image__leaf sisu-splax" data-para-options='{
-            "orientation": "left",
-            "scale": 1.5,
-            "overflow": true
-            }' style="position: absolute; right: -20px; top: -20px; z-index: 2;">
-								<img src="assets/images/shapes/about-1-leaf.png" alt="sisu" />
-							</div>
-							<div class="about-one__image__ball wow fadeInUp" data-wow-delay="100ms"
-								style="position: absolute; left: -10px; top: 50%; width: 40px; height: 40px; border-radius: 50%; background-color: #6e1d0f;">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+				<div class="sec-title text-center">
+					<h6 class="sec-title__tagline">Administration &amp; Management</h6><!-- /.sec-title__tagline -->
+					<h3 class="sec-title__title">Meet our administration<br> &amp; management team</h3><!-- /.sec-title__title -->
+				</div><!-- /.sec-title -->
+				<div class="row justify-content-center">
+
+					<!-- Profile 1: Asiimwe Prossy -->
+					<div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="0ms">
+						<div class="team-card" style="--accent-color: #26A6A1;">
+							<div class="team-card__svg-top">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 157" fill="currentColor">
+									<path d="M0.255249 1.69657C0.907365 0.855618 12.3312 0.403216 29.5368 0.426383C46.7158 0.513133 69.6055 1.28915 92.43 3.86789C115.129 6.52265 136.887 11.9096 152.332 18.8871C156.063 20.7291 160.018 22.2178 163.085 24.0834C166.027 26.0249 168.807 27.8183 171.326 29.4759C172.586 30.3047 173.783 31.1053 174.907 31.8548C175.906 32.6803 176.753 33.513 177.573 34.2768C179.212 35.8045 180.617 37.1329 181.716 38.2108C182.815 39.2886 184.157 40.5888 185.634 42.1007C187.067 43.6303 188.151 45.5893 189.621 47.6079C191.002 49.662 192.509 51.9048 194.115 54.2677C195.766 56.6128 196.54 59.4901 197.896 62.2698C199.074 65.1203 200.421 68.0095 201.537 71.0967C202.284 74.3024 203.059 77.5769 203.852 80.8974C205.752 87.4145 205.994 94.5861 206.495 101.496C207.754 129.351 201.165 155.955 198.932 156.465C195.811 157.22 197.496 131.837 192.769 105.828C191.373 99.4039 190.414 92.6477 187.897 86.6661C186.845 83.6072 185.802 80.5712 184.786 77.6041C183.331 74.8368 181.903 72.1384 180.52 69.5546C179.048 67.0063 178.105 64.3551 176.347 62.2643C174.679 60.1381 173.145 58.0913 171.694 56.2509C170.197 54.4283 169.113 52.6017 167.699 51.2504C166.276 49.8762 164.988 48.7137 163.971 47.7099C162.953 46.7061 161.692 45.48 160.232 44.014C159.485 43.3013 158.755 42.5021 157.872 41.71C156.864 40.994 155.794 40.2498 154.696 39.4367C152.464 37.8513 150.061 36.0947 147.461 34.2305C144.815 32.3841 141.282 30.9144 138.018 29.0738C124.431 22.0789 105.04 16.1286 84.1235 12.4784C63.162 8.84582 41.6318 6.79042 25.7309 5.21776C9.8033 3.70869 -0.387809 2.56047 0.255249 1.69657Z"/>
+								</svg>
+							</div><!-- /.top__shape -->
+							<div class="team-card__svg-middle">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 98" fill="currentColor">
+									<path d="M203.517 22.6552C120.489 128.266 3.54803 91.1587 2.29153 90.7596C0.667608 90.2287 -0.200435 88.4866 0.330195 86.8628C0.860825 85.2391 2.60286 84.3715 4.22678 84.9025C5.48328 85.3016 130.102 124.677 210.694 2.04102C211.597 0.592506 213.532 0.229286 214.961 1.15706C216.391 2.08483 216.774 3.99488 215.846 5.42433C211.856 11.5493 207.731 17.2946 203.517 22.6552Z"/>
+								</svg>
+							</div><!-- /.middle__shape -->
+							<div class="team-card__image sisu-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
+								<img src="/Asiimwe%20Prossy%20-%20Marketing%20Manager.jpeg" alt="Asiimwe Prossy - Marketing Manager">
+							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+								<h3 class="team-card__title">
+									<a href="#">Asiimwe Prossy</a>
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation">Marketing Manager</p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.col -->
+
+					<!-- Profile 2: Ssebaale Andrew -->
+					<div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+						<div class="team-card" style="--accent-color: #FFAA23;">
+							<div class="team-card__svg-top">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 157" fill="currentColor">
+									<path d="M0.255249 1.69657C0.907365 0.855618 12.3312 0.403216 29.5368 0.426383C46.7158 0.513133 69.6055 1.28915 92.43 3.86789C115.129 6.52265 136.887 11.9096 152.332 18.8871C156.063 20.7291 160.018 22.2178 163.085 24.0834C166.027 26.0249 168.807 27.8183 171.326 29.4759C172.586 30.3047 173.783 31.1053 174.907 31.8548C175.906 32.6803 176.753 33.513 177.573 34.2768C179.212 35.8045 180.617 37.1329 181.716 38.2108C182.815 39.2886 184.157 40.5888 185.634 42.1007C187.067 43.6303 188.151 45.5893 189.621 47.6079C191.002 49.662 192.509 51.9048 194.115 54.2677C195.766 56.6128 196.54 59.4901 197.896 62.2698C199.074 65.1203 200.421 68.0095 201.537 71.0967C202.284 74.3024 203.059 77.5769 203.852 80.8974C205.752 87.4145 205.994 94.5861 206.495 101.496C207.754 129.351 201.165 155.955 198.932 156.465C195.811 157.22 197.496 131.837 192.769 105.828C191.373 99.4039 190.414 92.6477 187.897 86.6661C186.845 83.6072 185.802 80.5712 184.786 77.6041C183.331 74.8368 181.903 72.1384 180.52 69.5546C179.048 67.0063 178.105 64.3551 176.347 62.2643C174.679 60.1381 173.145 58.0913 171.694 56.2509C170.197 54.4283 169.113 52.6017 167.699 51.2504C166.276 49.8762 164.988 48.7137 163.971 47.7099C162.953 46.7061 161.692 45.48 160.232 44.014C159.485 43.3013 158.755 42.5021 157.872 41.71C156.864 40.994 155.794 40.2498 154.696 39.4367C152.464 37.8513 150.061 36.0947 147.461 34.2305C144.815 32.3841 141.282 30.9144 138.018 29.0738C124.431 22.0789 105.04 16.1286 84.1235 12.4784C63.162 8.84582 41.6318 6.79042 25.7309 5.21776C9.8033 3.70869 -0.387809 2.56047 0.255249 1.69657Z"/>
+								</svg>
+							</div><!-- /.top__shape -->
+							<div class="team-card__svg-middle">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 98" fill="currentColor">
+									<path d="M203.517 22.6552C120.489 128.266 3.54803 91.1587 2.29153 90.7596C0.667608 90.2287 -0.200435 88.4866 0.330195 86.8628C0.860825 85.2391 2.60286 84.3715 4.22678 84.9025C5.48328 85.3016 130.102 124.677 210.694 2.04102C211.597 0.592506 213.532 0.229286 214.961 1.15706C216.391 2.08483 216.774 3.99488 215.846 5.42433C211.856 11.5493 207.731 17.2946 203.517 22.6552Z"/>
+								</svg>
+							</div><!-- /.middle__shape -->
+							<div class="team-card__image sisu-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
+								<img src="/Ssebaale%20Andrew%20Head%20of%20Academics.jpeg" alt="Ssebaale Andrew - Head of Academics">
+							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+								<h3 class="team-card__title">
+									<a href="#">Ssebaale Andrew</a>
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation">Head of Academics</p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.col -->
+
+					<!-- Profile 3: Nsubuga Jovan -->
+					<div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+						<div class="team-card" style="--accent-color: #6e1d0f;">
+							<div class="team-card__svg-top">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 157" fill="currentColor">
+									<path d="M0.255249 1.69657C0.907365 0.855618 12.3312 0.403216 29.5368 0.426383C46.7158 0.513133 69.6055 1.28915 92.43 3.86789C115.129 6.52265 136.887 11.9096 152.332 18.8871C156.063 20.7291 160.018 22.2178 163.085 24.0834C166.027 26.0249 168.807 27.8183 171.326 29.4759C172.586 30.3047 173.783 31.1053 174.907 31.8548C175.906 32.6803 176.753 33.513 177.573 34.2768C179.212 35.8045 180.617 37.1329 181.716 38.2108C182.815 39.2886 184.157 40.5888 185.634 42.1007C187.067 43.6303 188.151 45.5893 189.621 47.6079C191.002 49.662 192.509 51.9048 194.115 54.2677C195.766 56.6128 196.54 59.4901 197.896 62.2698C199.074 65.1203 200.421 68.0095 201.537 71.0967C202.284 74.3024 203.059 77.5769 203.852 80.8974C205.752 87.4145 205.994 94.5861 206.495 101.496C207.754 129.351 201.165 155.955 198.932 156.465C195.811 157.22 197.496 131.837 192.769 105.828C191.373 99.4039 190.414 92.6477 187.897 86.6661C186.845 83.6072 185.802 80.5712 184.786 77.6041C183.331 74.8368 181.903 72.1384 180.52 69.5546C179.048 67.0063 178.105 64.3551 176.347 62.2643C174.679 60.1381 173.145 58.0913 171.694 56.2509C170.197 54.4283 169.113 52.6017 167.699 51.2504C166.276 49.8762 164.988 48.7137 163.971 47.7099C162.953 46.7061 161.692 45.48 160.232 44.014C159.485 43.3013 158.755 42.5021 157.872 41.71C156.864 40.994 155.794 40.2498 154.696 39.4367C152.464 37.8513 150.061 36.0947 147.461 34.2305C144.815 32.3841 141.282 30.9144 138.018 29.0738C124.431 22.0789 105.04 16.1286 84.1235 12.4784C63.162 8.84582 41.6318 6.79042 25.7309 5.21776C9.8033 3.70869 -0.387809 2.56047 0.255249 1.69657Z"/>
+								</svg>
+							</div><!-- /.top__shape -->
+							<div class="team-card__svg-middle">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 98" fill="currentColor">
+									<path d="M203.517 22.6552C120.489 128.266 3.54803 91.1587 2.29153 90.7596C0.667608 90.2287 -0.200435 88.4866 0.330195 86.8628C0.860825 85.2391 2.60286 84.3715 4.22678 84.9025C5.48328 85.3016 130.102 124.677 210.694 2.04102C211.597 0.592506 213.532 0.229286 214.961 1.15706C216.391 2.08483 216.774 3.99488 215.846 5.42433C211.856 11.5493 207.731 17.2946 203.517 22.6552Z"/>
+								</svg>
+							</div><!-- /.middle__shape -->
+							<div class="team-card__image sisu-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
+								<img src="/Nsubuga%20Jovan%20-%20Finance%20Officer.jpeg" alt="Nsubuga Jovan - Finance Officer">
+							</div><!-- /.team-card__image -->
+							<div class="team-card__content">
+								<h3 class="team-card__title">
+									<a href="#">Nsubuga Jovan</a>
+								</h3><!-- /.team-card__title -->
+								<p class="team-card__designation">Finance Officer</p><!-- /.team-card__designation -->
+							</div><!-- /.team-card__content -->
+						</div><!-- /.team-card -->
+					</div><!-- /.col -->
+
+				</div><!-- /.row -->
+			</div><!-- /.container -->
 		</section>
-		<!--Message Section End-->
+		<!--Administration & Management Team End-->
 
 		<footer class="main-footer">
 			<div class="main-footer__bg"></div>
@@ -535,7 +623,7 @@
 				</li>
 				<li>
 					<i class="fa fa-phone-alt"></i>
-					<a href="tel:666-888-0000">666 888 0000</a>
+					<a href="tel:+256708800006">+256 708 800 006</a>
 				</li>
 			</ul><!-- /.mobile-nav__contact -->
 			<div class="mobile-nav__social">
@@ -574,6 +662,12 @@
 		<!-- /.search-popup__content -->
 	</div>
 	<!-- /.search-popup -->
+
+	<!-- Floating WhatsApp Button -->
+	<a href="https://wa.me/256708800006" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+		aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp">
+		<i class="fab fa-whatsapp" aria-hidden="true"></i>
+	</a>
 
 	<a href="#" class="scroll-top">
 		<svg class="scroll-top__circle" width="100%" height="100%" viewBox="-1 -1 102 102">
