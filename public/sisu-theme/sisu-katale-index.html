@@ -444,6 +444,128 @@ body.custom-cursor {
   object-fit: cover;
 }
 </style>
+
+<style id="visual-polish">
+/* ============================================================
+   VISUAL POLISH PASS — modern refinements, brand colors kept.
+   Remove this block to fully revert.
+   ============================================================ */
+
+html { scroll-behavior: smooth; }
+
+/* --- Hero: brand-tinted overlay + depth --- */
+.landing-hero {
+  background:
+    linear-gradient(135deg, rgba(7, 21, 38, 0.88) 0%, rgba(15, 19, 28, 0.72) 55%, rgba(110, 29, 15, 0.55) 100%),
+    url('/SISU%20Kampala/SISU-Kampala46.jpeg') center/cover no-repeat;
+}
+
+.landing-hero__title {
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.45);
+  letter-spacing: 0.5px;
+}
+
+.landing-hero__subtitle {
+  font-size: 21px;
+  color: #ffd97a;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.landing-hero__cta {
+  border-radius: 12px;
+  padding: 17px 34px;
+  letter-spacing: 0.4px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.landing-hero__cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(255, 182, 6, 0.4);
+}
+
+.landing-hero__campus-name {
+  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.55);
+}
+
+/* Header scrim so nav stays readable over any hero photo */
+.main-header.sticky-header::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 160%;
+  background: linear-gradient(to bottom, rgba(5, 10, 20, 0.55), transparent);
+  pointer-events: none;
+}
+.main-header__inner { position: relative; }
+
+/* --- Logo ticker: soft fade at edges --- */
+.logo-ticker > div {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* --- Cards: gentle lift + image zoom on hover --- */
+.program-one__item,
+.blog-card-three,
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 18px;
+}
+.program-one__item:hover,
+.blog-card-three:hover,
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(15, 19, 28, 0.12);
+}
+
+.program-one__item__image,
+.blog-card-three__image,
+.about-one__image__one,
+.video-one__btn {
+  overflow: hidden;
+}
+.program-one__item__image img,
+.blog-card-three__image > img,
+.video-one__btn img {
+  transition: transform 0.5s ease;
+}
+.program-one__item:hover .program-one__item__image img,
+.blog-card-three:hover .blog-card-three__image > img,
+.video-one__btn:hover img {
+  transform: scale(1.05);
+}
+
+/* --- Smooth link & button transitions everywhere --- */
+a, button { transition: color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease; }
+
+/* --- Section headings: subtle brand underline flourish --- */
+.sec-title__tagline {
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.sec-title__title { letter-spacing: 0.3px; }
+
+/* --- Footer: refined link hover --- */
+.footer-widget__links a:hover,
+.footer-widget__info a:hover {
+  color: #ffb606 !important;
+  padding-left: 4px;
+}
+.footer-widget__links a,
+.footer-widget__info a { transition: color 0.2s ease, padding-left 0.2s ease; }
+
+/* --- Accessible focus states --- */
+a:focus-visible, button:focus-visible {
+  outline: 3px solid rgba(255, 182, 6, 0.65);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* --- Mail / newsletter section polish --- */
+.mail-one input[type="email"],
+.mail-one input[type="text"] {
+  border-radius: 12px;
+}
+</style>
 </head>
 
 <body class="custom-cursor">
