@@ -4,16 +4,16 @@ import "./CollageBackground.css";
 
 // List of selected images for the collage
 const images = [
-  "/15-09-2015-12-03-57_DSCN1414.jpg",
-  "/26-08-2015-01-01-46_IMG_1441.jpg",
-  "/26-08-2015-01-03-29_IMG_3691.jpg",
-  "/26-08-2015-12-49-54__MG_8635.jpg",
-  "/26-08-2015-12-54-03__MG_9650.jpg",
-  "/73e7f5be-efe4-4779-a0dd-ec96e761e11c.jpg",
-  "/annie-spratt-V-XM4kkWpng-unsplash.jpg",
-  "/raissa-lara-lutolf-fasel-ivKWcUFJQtE-unsplash.jpg",
-  "/bright-kwabena-kyere-rxB0L6nrP5M-unsplash.jpg",
-  "/heather-suggitt-AjB5qK2rnbU-unsplash.jpg"
+  "/SISU%20Kampala/SISU-Kampala44.jpeg",
+  "/SISU%20Kampala/SISU-Kampala17.jpeg",
+  "/SISU%20Kampala/SISU-Kampala18.jpeg",
+  "/SISU%20Kampala/SISU-Kampala19.jpeg",
+  "/SISU%20Kampala/SISU-Kampala21.jpeg",
+  "/SISU%20Kampala/SISU-Kampala45.jpeg",
+  "/SISU%20Kampala/SISU-Kampala36.jpeg",
+  "/SISU%20Kampala/SISU-Kampala40.jpeg",
+  "/SISU%20Kampala/SISU-Kampala37.jpeg",
+  "/SISU%20Kampala/SISU-Kampala38.jpeg"
 ];
 
 
