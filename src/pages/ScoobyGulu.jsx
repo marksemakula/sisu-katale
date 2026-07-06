@@ -11,7 +11,7 @@ const ScoobyKatale = () => {
         display: 'block'
       }}
       title="Scoobydoo International School Uganda (SISU) - Katale Campus"
-      sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-pointer-lock"
+      sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-pointer-lock allow-downloads"
     />
   );
 };
