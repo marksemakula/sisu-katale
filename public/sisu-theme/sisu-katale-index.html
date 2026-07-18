@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
   <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-  <meta name="description" content="SISU is a modern HTML Template for kindergarten, preschool, nursery and primary schools. The template perfectly fits for child care, babysitting, education and children related schools, websites and businesses." />
+  <meta name="description" content="Scoobydoo International School Uganda (SISU) - Katale Campus offers Daycare and Nursery education in Kampala. Meet our Parent's Committee: Ms. Nakiyingi Shakirah, Mr. Matovu Enock, Eng. Kalema Baker, Ms. Angrine Akatuha, Mr. Hamid Kaaya S. and Ms. Nassanga Sarah." />
 
   <!-- fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -566,6 +566,22 @@ a:focus-visible, button:focus-visible {
   border-radius: 12px;
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Scoobydoo International School Uganda (SISU) - Katale Campus",
+  "url": "https://scoobydoointernational.ac.ug/sisu-theme/sisu-katale-index.html",
+  "member": [
+    { "@type": "Person", "name": "Ms. Nakiyingi Shakirah", "jobTitle": "Chairperson, Parent's Committee", "image": "https://scoobydoointernational.ac.ug/SISU%20Kampala/Ms.Nakiyingi%20Shakirah_Chairperson%20parents%20committe.jpeg" },
+    { "@type": "Person", "name": "Mr. Matovu Enock", "jobTitle": "Vice Chairperson, Parent's Committee", "image": "https://scoobydoointernational.ac.ug/SISU%20Kampala/committeeMr.Matovu%20Enock_%20Vice%20chair%20person%20-%20Parents%20.jpeg" },
+    { "@type": "Person", "name": "Eng. Kalema Baker", "jobTitle": "Secretary, Parent's Committee", "image": "https://scoobydoointernational.ac.ug/SISU%20Kampala/Eng.Kalema%20Baker%20is%20the%20secretary%20-%20Parents%20Committee.jpeg" },
+    { "@type": "Person", "name": "Ms. Angrine Akatuha", "jobTitle": "Treasurer, Parent's Committee", "image": "https://scoobydoointernational.ac.ug/SISU%20Kampala/Angrine%20Akatuha%20is%20our%20Parents%20committee%20treasure..jpeg" },
+    { "@type": "Person", "name": "Mr. Hamid Kaaya S.", "jobTitle": "Coordinator, Parent's Committee", "image": "https://scoobydoointernational.ac.ug/SISU%20Kampala/Hamid%20Kaaya.S%20is%20our%20parents%20committe%20coordinator.jpeg" },
+    { "@type": "Person", "name": "Ms. Nassanga Sarah", "jobTitle": "Public Relations, Parent's Committee", "image": "https://scoobydoointernational.ac.ug/SISU%20Kampala/Ms%20Nassanga%20Sarah%20is%20the%20PR%20-%20Parents%20Committee.jpeg" }
+  ]
+}
+</script>
 </head>
 
 <body class="custom-cursor">
@@ -613,7 +629,6 @@ a:focus-visible, button:focus-visible {
 						<li><a href="school-profile.html">School Profile</a></li>
 						<li class="scrollToLink"><a href="#about-mission">Mission &amp; Vision</a></li>
 						<li class="scrollToLink"><a href="#about-mission">Core Values</a></li>
-						<li class="scrollToLink"><a href="#about-bog">School Management Committee</a></li>
 						<li><a href="parents-committee.html">Parent&#39;s Committee</a></li>
 						<li><a href="coordinator-message.html">Campus Coordinator Message</a></li>
 						<li><a href="administration-management.html">Administration &amp; Management</a></li>
@@ -1126,6 +1141,26 @@ body {
 		</div>
 	</div>
 </section>
+<style>
+.smc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px 32px;margin-top:48px;max-width:920px;margin-left:auto;margin-right:auto;}
+.smc-card{--smc-accent:#ffb606;position:relative;background:#fff;border:3px solid var(--smc-accent);border-radius:26px;overflow:hidden;text-align:center;transform:rotate(var(--smc-rot,-2deg));transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease;}
+.smc-card:nth-child(even){--smc-rot:2deg;}
+.smc-card:hover{transform:rotate(0deg) translateY(-8px) scale(1.04);box-shadow:0 18px 40px rgba(110,29,15,.18);}
+.smc-card:nth-child(6n+1){--smc-accent:#26A6A1;}
+.smc-card:nth-child(6n+2){--smc-accent:#FFAA23;}
+.smc-card:nth-child(6n+3){--smc-accent:#75C137;}
+.smc-card:nth-child(6n+4){--smc-accent:#FF6F91;}
+.smc-card:nth-child(6n+5){--smc-accent:#2390FF;}
+.smc-card:nth-child(6n+6){--smc-accent:#9B5DE5;}
+.smc-card__img{aspect-ratio:1/1;overflow:hidden;position:relative;}
+.smc-card__img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.22),transparent 45%);}
+.smc-card__img img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.smc-card__body{padding:18px 16px 26px;}
+.smc-card__name{font-family:'Cinzel',serif;font-size:18px;color:#6e1d0f;margin:0 0 10px;}
+.smc-card__role{display:inline-block;font-family:'Schoolbell',cursive;font-size:16px;color:#fff;background:var(--smc-accent);padding:5px 18px;border-radius:20px;margin:0;font-weight:700;transform:rotate(-2deg);}
+@media (max-width:991px){.smc-grid{grid-template-columns:repeat(2,1fr);max-width:600px;}}
+@media (max-width:575px){.smc-grid{grid-template-columns:1fr;max-width:320px;}}
+</style>
 <section class="team-one" id="about-bog">
 	<div class="team-one__bg sisu-splax" data-para-options='{
 		"orientation": "up",
@@ -1139,173 +1174,34 @@ body {
 	</div>
 	<div class="container">
 		<div class="sec-title text-center">
-	
-	<h6 class="sec-title__tagline">School Management Committee</h6><!-- /.sec-title__tagline -->
-	
-	<h3 class="sec-title__title">Meet our expert & smart<br> superheroes!</h3><!-- /.sec-title__title -->
+	<h6 class="sec-title__tagline">Parents Committee</h6>
+	<h3 class="sec-title__title">The committee that champions<br> our school community</h3>
 </div><!-- /.sec-title -->
-		<div class="team-one__carousel sisu-owl__carousel sisu-owl__carousel--basic-nav sisu-owl__carousel--with-shadow owl-carousel owl-theme"
-			data-owl-options='{
-			"items": 1,
-			"margin": 0,
-			"loop": false,
-			"smartSpeed": 700,
-			"nav": false,
-			"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-			"dots": true,
-			"autoplay": false,
-			"responsive": {
-				"0": {
-					"items": 1
-				},
-				"576": {
-					"items": 2,
-					"margin": 30
-				},
-				"992": {
-					"items": 3,
-					"margin": 30
-				}
-			}
-			}'>
-			<div class="item">
-				<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms' style='--accent-color: #26A6A1;'>
-	<div class="team-card__svg-top">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 157" fill="currentColor">
-			<path d="M0.255249 1.69657C0.907365 0.855618 12.3312 0.403216 29.5368 0.426383C46.7158 0.513133 69.6055 1.28915 92.43 3.86789C115.129 6.52265 136.887 11.9096 152.332 18.8871C156.063 20.7291 160.018 22.2178 163.085 24.0834C166.027 26.0249 168.807 27.8183 171.326 29.4759C172.586 30.3047 173.783 31.1053 174.907 31.8548C175.906 32.6803 176.753 33.513 177.573 34.2768C179.212 35.8045 180.617 37.1329 181.716 38.2108C182.815 39.2886 184.157 40.5888 185.634 42.1007C187.067 43.6303 188.151 45.5893 189.621 47.6079C191.002 49.662 192.509 51.9048 194.115 54.2677C195.766 56.6128 196.54 59.4901 197.896 62.2698C199.074 65.1203 200.421 68.0095 201.537 71.0967C202.284 74.3024 203.059 77.5769 203.852 80.8974C205.752 87.4145 205.994 94.5861 206.495 101.496C207.754 129.351 201.165 155.955 198.932 156.465C195.811 157.22 197.496 131.837 192.769 105.828C191.373 99.4039 190.414 92.6477 187.897 86.6661C186.845 83.6072 185.802 80.5712 184.786 77.6041C183.331 74.8368 181.903 72.1384 180.52 69.5546C179.048 67.0063 178.105 64.3551 176.347 62.2643C174.679 60.1381 173.145 58.0913 171.694 56.2509C170.197 54.4283 169.113 52.6017 167.699 51.2504C166.276 49.8762 164.988 48.7137 163.971 47.7099C162.953 46.7061 161.692 45.48 160.232 44.014C159.485 43.3013 158.755 42.5021 157.872 41.71C156.864 40.994 155.794 40.2498 154.696 39.4367C152.464 37.8513 150.061 36.0947 147.461 34.2305C144.815 32.3841 141.282 30.9144 138.018 29.0738C124.431 22.0789 105.04 16.1286 84.1235 12.4784C63.162 8.84582 41.6318 6.79042 25.7309 5.21776C9.8033 3.70869 -0.387809 2.56047 0.255249 1.69657Z"/>
-		</svg>
-	</div><!-- /.top__shape -->
-	<div class="team-card__svg-middle">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 98" fill="currentColor">
-			<path d="M203.517 22.6552C120.489 128.266 3.54803 91.1587 2.29153 90.7596C0.667608 90.2287 -0.200435 88.4866 0.330195 86.8628C0.860825 85.2391 2.60286 84.3715 4.22678 84.9025C5.48328 85.3016 130.102 124.677 210.694 2.04102C211.597 0.592506 213.532 0.229286 214.961 1.15706C216.391 2.08483 216.774 3.99488 215.846 5.42433C211.856 11.5493 207.731 17.2946 203.517 22.6552Z"/>
-		</svg>
-	</div><!-- /.middle__shape -->
-	<div class="team-card__image sisu-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
-		<img src="/Kampala/GES Executive Chairperson Mrs Harriet Mulyanti.JPG" alt="Mrs Mulyanti Harriet">
-	</div><!-- /.team-card__image -->
-	<div class="team-card__content">
-		<h3 class="team-card__title">
-			<a href="#">Mrs Mulyanti Harriet</a>
-		</h3><!-- /.team-card__title -->
-		<p class="team-card__designation">Executive Chairperson</p><!-- /.team-card__designation -->
-		<div class="list-unstyled team-card__social__list">
-			<a class="fb" href="https://facebook.com/">
-	<span class="social-bg">
-		<svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M31.5 16.3589C31.5 20.5911 29.4895 24.2963 26.5247 27.0295C23.5615 29.7612 19.6738 31.4931 15.9801 31.7919C7.53366 31.7812 0.499996 24.8704 0.499997 16.3588C0.499998 12.0164 1.39914 8.15083 4.00159 5.36741C6.5968 2.59173 10.9785 0.794576 18.1657 0.791876C22.7642 1.09086 26.0753 2.85269 28.2459 5.56601C30.428 8.29363 31.5 12.0368 31.5 16.3589Z"/></svg>
-	</span>
-	<i class="fab fa-facebook-f" aria-hidden="true"></i>
-	<span class="sr-only">Facebook</span>
-</a>
-<a class="li" href="https://www.linkedin.com/">
-	<span class="social-bg">
-		<svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M31.5 16.3589C31.5 20.5911 29.4895 24.2963 26.5247 27.0295C23.5615 29.7612 19.6738 31.4931 15.9801 31.7919C7.53366 31.7812 0.499996 24.8704 0.499997 16.3588C0.499998 12.0164 1.39914 8.15083 4.00159 5.36741C6.5968 2.59173 10.9785 0.794576 18.1657 0.791876C22.7642 1.09086 26.0753 2.85269 28.2459 5.56601C30.428 8.29363 31.5 12.0368 31.5 16.3589Z"/></svg>
-	</span>
-	<i class="fab fa-linkedin-in" aria-hidden="true"></i>
-	<span class="sr-only">Linkedin</span>
-</a>
-<a class="yo" href="https://www.youtube.com/">
-	<span class="social-bg">
-		<svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M31.5 16.3589C31.5 20.5911 29.4895 24.2963 26.5247 27.0295C23.5615 29.7612 19.6738 31.4931 15.9801 31.7919C7.53366 31.7812 0.499996 24.8704 0.499997 16.3588C0.499998 12.0164 1.39914 8.15083 4.00159 5.36741C6.5968 2.59173 10.9785 0.794576 18.1657 0.791876C22.7642 1.09086 26.0753 2.85269 28.2459 5.56601C30.428 8.29363 31.5 12.0368 31.5 16.3589Z"/></svg>
-	</span>
-	<i class="fab fa-youtube" aria-hidden="true"></i>
-	<span class="sr-only">Youtube</span>
-</a>
-		</div><!-- /.list-unstyled team-card__social__list -->
-	</div><!-- /.team-card__content -->
-</div><!-- /.team-card -->
-			</div><!-- /.team-item -->
-			<div class="item">
-				<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms' style='--accent-color: #FFAA23;'>
-	<div class="team-card__svg-top">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 157" fill="currentColor">
-			<path d="M0.255249 1.69657C0.907365 0.855618 12.3312 0.403216 29.5368 0.426383C46.7158 0.513133 69.6055 1.28915 92.43 3.86789C115.129 6.52265 136.887 11.9096 152.332 18.8871C156.063 20.7291 160.018 22.2178 163.085 24.0834C166.027 26.0249 168.807 27.8183 171.326 29.4759C172.586 30.3047 173.783 31.1053 174.907 31.8548C175.906 32.6803 176.753 33.513 177.573 34.2768C179.212 35.8045 180.617 37.1329 181.716 38.2108C182.815 39.2886 184.157 40.5888 185.634 42.1007C187.067 43.6303 188.151 45.5893 189.621 47.6079C191.002 49.662 192.509 51.9048 194.115 54.2677C195.766 56.6128 196.54 59.4901 197.896 62.2698C199.074 65.1203 200.421 68.0095 201.537 71.0967C202.284 74.3024 203.059 77.5769 203.852 80.8974C205.752 87.4145 205.994 94.5861 206.495 101.496C207.754 129.351 201.165 155.955 198.932 156.465C195.811 157.22 197.496 131.837 192.769 105.828C191.373 99.4039 190.414 92.6477 187.897 86.6661C186.845 83.6072 185.802 80.5712 184.786 77.6041C183.331 74.8368 181.903 72.1384 180.52 69.5546C179.048 67.0063 178.105 64.3551 176.347 62.2643C174.679 60.1381 173.145 58.0913 171.694 56.2509C170.197 54.4283 169.113 52.6017 167.699 51.2504C166.276 49.8762 164.988 48.7137 163.971 47.7099C162.953 46.7061 161.692 45.48 160.232 44.014C159.485 43.3013 158.755 42.5021 157.872 41.71C156.864 40.994 155.794 40.2498 154.696 39.4367C152.464 37.8513 150.061 36.0947 147.461 34.2305C144.815 32.3841 141.282 30.9144 138.018 29.0738C124.431 22.0789 105.04 16.1286 84.1235 12.4784C63.162 8.84582 41.6318 6.79042 25.7309 5.21776C9.8033 3.70869 -0.387809 2.56047 0.255249 1.69657Z"/>
-		</svg>
-	</div><!-- /.top__shape -->
-	<div class="team-card__svg-middle">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 98" fill="currentColor">
-			<path d="M203.517 22.6552C120.489 128.266 3.54803 91.1587 2.29153 90.7596C0.667608 90.2287 -0.200435 88.4866 0.330195 86.8628C0.860825 85.2391 2.60286 84.3715 4.22678 84.9025C5.48328 85.3016 130.102 124.677 210.694 2.04102C211.597 0.592506 213.532 0.229286 214.961 1.15706C216.391 2.08483 216.774 3.99488 215.846 5.42433C211.856 11.5493 207.731 17.2946 203.517 22.6552Z"/>
-		</svg>
-	</div><!-- /.middle__shape -->
-	<div class="team-card__image sisu-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
-		<img src="/Kampala/Owek. Kyewalabye David Male.jpg" alt="Owek. David Kyewalabye Male">
-	</div><!-- /.team-card__image -->
-	<div class="team-card__content">
-		<h3 class="team-card__title">
-			<a href="#">Owek. David Kyewalabye Male</a>
-		</h3><!-- /.team-card__title -->
-		<p class="team-card__designation">Director</p><!-- /.team-card__designation -->
-		<div class="list-unstyled team-card__social__list">
-			<a class="fb" href="https://facebook.com/">
-	<span class="social-bg">
-		<svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M31.5 16.3589C31.5 20.5911 29.4895 24.2963 26.5247 27.0295C23.5615 29.7612 19.6738 31.4931 15.9801 31.7919C7.53366 31.7812 0.499996 24.8704 0.499997 16.3588C0.499998 12.0164 1.39914 8.15083 4.00159 5.36741C6.5968 2.59173 10.9785 0.794576 18.1657 0.791876C22.7642 1.09086 26.0753 2.85269 28.2459 5.56601C30.428 8.29363 31.5 12.0368 31.5 16.3589Z"/></svg>
-	</span>
-	<i class="fab fa-facebook-f" aria-hidden="true"></i>
-	<span class="sr-only">Facebook</span>
-</a>
-<a class="li" href="https://www.linkedin.com/">
-	<span class="social-bg">
-		<svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M31.5 16.3589C31.5 20.5911 29.4895 24.2963 26.5247 27.0295C23.5615 29.7612 19.6738 31.4931 15.9801 31.7919C7.53366 31.7812 0.499996 24.8704 0.499997 16.3588C0.499998 12.0164 1.39914 8.15083 4.00159 5.36741C6.5968 2.59173 10.9785 0.794576 18.1657 0.791876C22.7642 1.09086 26.0753 2.85269 28.2459 5.56601C30.428 8.29363 31.5 12.0368 31.5 16.3589Z"/></svg>
-	</span>
-	<i class="fab fa-linkedin-in" aria-hidden="true"></i>
-	<span class="sr-only">Linkedin</span>
-</a>
-<a class="yo" href="https://www.youtube.com/">
-	<span class="social-bg">
-		<svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M31.5 16.3589C31.5 20.5911 29.4895 24.2963 26.5247 27.0295C23.5615 29.7612 19.6738 31.4931 15.9801 31.7919C7.53366 31.7812 0.499996 24.8704 0.499997 16.3588C0.499998 12.0164 1.39914 8.15083 4.00159 5.36741C6.5968 2.59173 10.9785 0.794576 18.1657 0.791876C22.7642 1.09086 26.0753 2.85269 28.2459 5.56601C30.428 8.29363 31.5 12.0368 31.5 16.3589Z"/></svg>
-	</span>
-	<i class="fab fa-youtube" aria-hidden="true"></i>
-	<span class="sr-only">Youtube</span>
-</a>
-		</div><!-- /.list-unstyled team-card__social__list -->
-	</div><!-- /.team-card__content -->
-</div><!-- /.team-card -->
-			</div><!-- /.team-item -->
-			<div class="item">
-				<div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms' style='--accent-color: #75C137;'>
-	<div class="team-card__svg-top">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 157" fill="currentColor">
-			<path d="M0.255249 1.69657C0.907365 0.855618 12.3312 0.403216 29.5368 0.426383C46.7158 0.513133 69.6055 1.28915 92.43 3.86789C115.129 6.52265 136.887 11.9096 152.332 18.8871C156.063 20.7291 160.018 22.2178 163.085 24.0834C166.027 26.0249 168.807 27.8183 171.326 29.4759C172.586 30.3047 173.783 31.1053 174.907 31.8548C175.906 32.6803 176.753 33.513 177.573 34.2768C179.212 35.8045 180.617 37.1329 181.716 38.2108C182.815 39.2886 184.157 40.5888 185.634 42.1007C187.067 43.6303 188.151 45.5893 189.621 47.6079C191.002 49.662 192.509 51.9048 194.115 54.2677C195.766 56.6128 196.54 59.4901 197.896 62.2698C199.074 65.1203 200.421 68.0095 201.537 71.0967C202.284 74.3024 203.059 77.5769 203.852 80.8974C205.752 87.4145 205.994 94.5861 206.495 101.496C207.754 129.351 201.165 155.955 198.932 156.465C195.811 157.22 197.496 131.837 192.769 105.828C191.373 99.4039 190.414 92.6477 187.897 86.6661C186.845 83.6072 185.802 80.5712 184.786 77.6041C183.331 74.8368 181.903 72.1384 180.52 69.5546C179.048 67.0063 178.105 64.3551 176.347 62.2643C174.679 60.1381 173.145 58.0913 171.694 56.2509C170.197 54.4283 169.113 52.6017 167.699 51.2504C166.276 49.8762 164.988 48.7137 163.971 47.7099C162.953 46.7061 161.692 45.48 160.232 44.014C159.485 43.3013 158.755 42.5021 157.872 41.71C156.864 40.994 155.794 40.2498 154.696 39.4367C152.464 37.8513 150.061 36.0947 147.461 34.2305C144.815 32.3841 141.282 30.9144 138.018 29.0738C124.431 22.0789 105.04 16.1286 84.1235 12.4784C63.162 8.84582 41.6318 6.79042 25.7309 5.21776C9.8033 3.70869 -0.387809 2.56047 0.255249 1.69657Z"/>
-		</svg>
-	</div><!-- /.top__shape -->
-	<div class="team-card__svg-middle">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 98" fill="currentColor">
-			<path d="M203.517 22.6552C120.489 128.266 3.54803 91.1587 2.29153 90.7596C0.667608 90.2287 -0.200435 88.4866 0.330195 86.8628C0.860825 85.2391 2.60286 84.3715 4.22678 84.9025C5.48328 85.3016 130.102 124.677 210.694 2.04102C211.597 0.592506 213.532 0.229286 214.961 1.15706C216.391 2.08483 216.774 3.99488 215.846 5.42433C211.856 11.5493 207.731 17.2946 203.517 22.6552Z"/>
-		</svg>
-	</div><!-- /.middle__shape -->
-	<div class="team-card__image sisu-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
-		<img src="/Kampala/GES Rector - Daniella Nakayenga.jpeg" alt="Nakayenga Daniella">
-	</div><!-- /.team-card__image -->
-	<div class="team-card__content">
-		<h3 class="team-card__title">
-			<a href="#">Nakayenga Daniella</a>
-		</h3><!-- /.team-card__title -->
-		<p class="team-card__designation">Rector</p><!-- /.team-card__designation -->
-		<div class="list-unstyled team-card__social__list">
-			<a class="fb" href="https://facebook.com/">
-	<span class="social-bg">
-		<svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M31.5 16.3589C31.5 20.5911 29.4895 24.2963 26.5247 27.0295C23.5615 29.7612 19.6738 31.4931 15.9801 31.7919C7.53366 31.7812 0.499996 24.8704 0.499997 16.3588C0.499998 12.0164 1.39914 8.15083 4.00159 5.36741C6.5968 2.59173 10.9785 0.794576 18.1657 0.791876C22.7642 1.09086 26.0753 2.85269 28.2459 5.56601C30.428 8.29363 31.5 12.0368 31.5 16.3589Z"/></svg>
-	</span>
-	<i class="fab fa-facebook-f" aria-hidden="true"></i>
-	<span class="sr-only">Facebook</span>
-</a>
-<a class="li" href="https://www.linkedin.com/">
-	<span class="social-bg">
-		<svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M31.5 16.3589C31.5 20.5911 29.4895 24.2963 26.5247 27.0295C23.5615 29.7612 19.6738 31.4931 15.9801 31.7919C7.53366 31.7812 0.499996 24.8704 0.499997 16.3588C0.499998 12.0164 1.39914 8.15083 4.00159 5.36741C6.5968 2.59173 10.9785 0.794576 18.1657 0.791876C22.7642 1.09086 26.0753 2.85269 28.2459 5.56601C30.428 8.29363 31.5 12.0368 31.5 16.3589Z"/></svg>
-	</span>
-	<i class="fab fa-linkedin-in" aria-hidden="true"></i>
-	<span class="sr-only">Linkedin</span>
-</a>
-<a class="yo" href="https://www.youtube.com/">
-	<span class="social-bg">
-		<svg viewBox="0 0 32 33" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path d="M31.5 16.3589C31.5 20.5911 29.4895 24.2963 26.5247 27.0295C23.5615 29.7612 19.6738 31.4931 15.9801 31.7919C7.53366 31.7812 0.499996 24.8704 0.499997 16.3588C0.499998 12.0164 1.39914 8.15083 4.00159 5.36741C6.5968 2.59173 10.9785 0.794576 18.1657 0.791876C22.7642 1.09086 26.0753 2.85269 28.2459 5.56601C30.428 8.29363 31.5 12.0368 31.5 16.3589Z"/></svg>
-	</span>
-	<i class="fab fa-youtube" aria-hidden="true"></i>
-	<span class="sr-only">Youtube</span>
-</a>
-		</div><!-- /.list-unstyled team-card__social__list -->
-	</div><!-- /.team-card__content -->
-</div><!-- /.team-card -->
-			</div><!-- /.team-item -->
+		<div class="smc-grid">
+			<div class="smc-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="0ms">
+				<div class="smc-card__img"><img src="/SISU%20Kampala/Ms.Nakiyingi%20Shakirah_Chairperson%20parents%20committe.jpeg" alt="Ms. Nakiyingi Shakirah" loading="lazy"></div>
+				<div class="smc-card__body"><h3 class="smc-card__name">Ms. Nakiyingi Shakirah</h3><p class="smc-card__role">Chairperson</p></div>
+			</div>
+			<div class="smc-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+				<div class="smc-card__img"><img src="/SISU%20Kampala/committeeMr.Matovu%20Enock_%20Vice%20chair%20person%20-%20Parents%20.jpeg" alt="Mr. Matovu Enock" loading="lazy"></div>
+				<div class="smc-card__body"><h3 class="smc-card__name">Mr. Matovu Enock</h3><p class="smc-card__role">Vice Chairperson</p></div>
+			</div>
+			<div class="smc-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+				<div class="smc-card__img"><img src="/SISU%20Kampala/Eng.Kalema%20Baker%20is%20the%20secretary%20-%20Parents%20Committee.jpeg" alt="Eng. Kalema Baker" loading="lazy"></div>
+				<div class="smc-card__body"><h3 class="smc-card__name">Eng. Kalema Baker</h3><p class="smc-card__role">Secretary</p></div>
+			</div>
+			<div class="smc-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+				<div class="smc-card__img"><img src="/SISU%20Kampala/Angrine%20Akatuha%20is%20our%20Parents%20committee%20treasure..jpeg" alt="Ms. Angrine Akatuha" loading="lazy"></div>
+				<div class="smc-card__body"><h3 class="smc-card__name">Ms. Angrine Akatuha</h3><p class="smc-card__role">Treasurer</p></div>
+			</div>
+			<div class="smc-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+				<div class="smc-card__img"><img src="/SISU%20Kampala/Hamid%20Kaaya.S%20is%20our%20parents%20committe%20coordinator.jpeg" alt="Mr. Hamid Kaaya S." loading="lazy"></div>
+				<div class="smc-card__body"><h3 class="smc-card__name">Mr. Hamid Kaaya S.</h3><p class="smc-card__role">Coordinator</p></div>
+			</div>
+			<div class="smc-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="500ms">
+				<div class="smc-card__img"><img src="/SISU%20Kampala/Ms%20Nassanga%20Sarah%20is%20the%20PR%20-%20Parents%20Committee.jpeg" alt="Ms. Nassanga Sarah" loading="lazy"></div>
+				<div class="smc-card__body"><h3 class="smc-card__name">Ms. Nassanga Sarah</h3><p class="smc-card__role">Public Relations</p></div>
+			</div>
 		</div>
 	</div>
 </section>
